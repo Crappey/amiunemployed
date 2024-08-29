@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: cursive;
+}
+.container {
+    text-align: center;
+    font: cursive;
+}
+input, button {
+    display: block;
+    margin: 10px auto;
+}
