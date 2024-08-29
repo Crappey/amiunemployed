@@ -10,3 +10,7 @@ function checkName() {
     }
 
 }
+
+function fakeSubmit() {
+    alert("Don't got a server bro")
+}
