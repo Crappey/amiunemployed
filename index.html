@@ -12,14 +12,15 @@
 
     <div class = "container">
         <h1>Job Check</h1>
-        <label for="namesList"></label>
-            <select id="namesList">
+        <label for="namesList">Select a name: </label>
+            <select id="namesList" onchange="checkName()">
+                <option value="blank"></option>
                 <option value="Adam">Adam</option>
+                <option value="Fleam">Fleam</option>
                 <option value="Joshua">Joshua</option>
                 <option value="Stephen">Stephen</option>
             </select>
-        <button onclick="checkName()">Submit</button>
-        <p id="response"></p>
+            <p id="response"></p>
     </div>
 
     <div class = "form">

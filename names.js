@@ -1,13 +1,26 @@
 function checkName() {
-    const dropdown = document.getElementById('namesList');
-    const selectedName = dropdown.value;
-    const nameToCompare = 'Adam'
+    const selectElement = document.getElementById('namesList');
+    const outputElement = document.getElementById('response');
+    const selectedName = selectElement.value;
+    let outputText = '';
 
-    if (selectedName === nameToCompare){
-        response.textContent = "You have a job, congrats";
-    } else {
-        response.textContent = "You have no job and you are worthless; have a blessed day!";
+    switch (selectedName) {
+        case 'Adam':
+            outputText = 'You have a job, congrats!';
+            break;
+        case 'Fleam':
+            outputText = 'You have a job <a href="https://github.com/RaminKav/LostInTime/" target="_blank">and a game!</a> How cool is that??';
+            break;
+        case 'Joshua':
+            outputText = 'You do not have a job and therefore are worthless, have a blessed day!';
+            break;
+        case 'Stephen':
+            outputText = 'You do not have a job and therefore are worthless, have a blessed day!';
+            break;
+        default:
+            outputText = 'Please select an option.';
     }
+    outputElement.innerHTML = outputText;
 
 }
 
