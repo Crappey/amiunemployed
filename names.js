@@ -12,10 +12,10 @@ function checkName() {
             outputText = 'You have a job <a href="https://github.com/RaminKav/LostInTime/" target="_blank">and a game!</a> How cool is that??';
             break;
         case 'Joshua':
-            outputText = 'You do not have a job and therefore are worthless, have a blessed day!';
+            outputText = 'Might be cooked';
             break;
         case 'Stephen':
-            outputText = 'You do not have a job and therefore are worthless, have a blessed day!';
+            outputText = 'You finally got a job grats bro!';
             break;
         default:
             outputText = 'Please select an option.';
